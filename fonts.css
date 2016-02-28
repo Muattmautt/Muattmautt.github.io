@@ -51,7 +51,7 @@
 		.fa-2x{font-size:2em}
 		.fa-3x{font-size:3em}
 		.fa-4x{font-size:4em}
-		.fa-5x{font-size:5em}
+		.fa-5x{font-size:10em}
 		.fa-fw{width:1.2857142857142858em;text-align:center}
 		.fa-ul{padding-left:0;margin-left:2.142857142857143em;list-style-type:none}.fa-ul>li{position:relative}
 		.fa-li{position:absolute;left:-2.142857142857143em;width:2.142857142857143em;top:.14285714285714285em;text-align:center}.fa-li.fa-lg{left:-1.8571428571428572em}
@@ -69,7 +69,7 @@
 		.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}
 		.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
 		.fa-stack-1x{line-height:inherit}
-		.fa-stack-2x{font-size:10em}
+		.fa-stack-2x{font-size:2em}
 		.fa-inverse{color:#fff}
 		.fa-glass:before{content:"\f000"}
 		.fa-music:before{content:"\f001"}
