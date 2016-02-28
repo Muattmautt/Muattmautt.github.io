@@ -20,7 +20,7 @@ h1, h2, h3
 	margin: 0;
 	padding: 0;
 	font-weight: 600;
-	color: #00FFE0;
+	color: #454445;
 }
 
 p, ol, ul
@@ -45,7 +45,7 @@ strong
 
 a
 {
-	color: #2C383B;
+	color: #00CCFF;
 }
 
 a:hover
