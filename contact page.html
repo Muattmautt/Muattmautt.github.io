@@ -1,27 +1,34 @@
- <form action="contact.php" method="post">
-
-                        	<div class="formele">
-    				<ul>
-    					<li>
-    					<label>Name:</label>
-    					<input type="text" id="name" name="name" class="text2" />
-    					</li>
-    					<li>
-    					<label>Telephone:</label>
-    					<input id="name" type="text" name="phone" class="text2" />
-    					</li>
-    					<li>
-    					<label>E-mail:</label>
-    					<input id="name" type="text" name="email" class="text2" />
-    					</li>
-                        <li>
-    					<label>Address:</label>
-    					<input id="name" type="text" name="message" class="text2" />
-    					</li>
-    					
-    					<li class="button">
-    					<input type="image" type="text" src="images/submit.png" />					
-    					</li>
-    				</ul>			
-    			</div><!--Contact Form Ends Here -->
-                </form>
+<?php 
+$action=$_REQUEST['action']; 
+if ($action=="")    /* display the contact form */ 
+    { 
+    ?> 
+    <form  action="" method="POST" enctype="multipart/form-data"> 
+    <input type="hidden" name="action" value="submit"> 
+    Your name:<br> 
+    <input name="name" type="text" value="" size="30"/><br> 
+    Your email:<br> 
+    <input name="email" type="text" value="" size="30"/><br> 
+    Your message:<br> 
+    <textarea name="message" rows="7" cols="30"></textarea><br> 
+    <input type="submit" value="Send email"/> 
+    </form> 
+    <?php 
+    }  
+else                /* send the submitted data */ 
+    { 
+    $name=$_REQUEST['name']; 
+    $email=$_REQUEST['email']; 
+    $message=$_REQUEST['message']; 
+    if (($name=="")||($email=="")||($message=="")) 
+        { 
+        echo "All fields are required, please fill <a href=\"\">the form</a> again."; 
+        } 
+    else{         
+        $from="From: $name<$email>\r\nReturn-path: $email"; 
+        $subject="Message sent using your contact form"; 
+        mail("200821@hkis.edu.hk", $subject, $message, $from); 
+        echo "Email sent!"; 
+        } 
+    }   
+?> 
