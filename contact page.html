@@ -1,13 +1,27 @@
-<?php                         
-if(isset($_POST['submit'])) { 
-$to = "you@you.com"; 
-$subject = "Form Tutorial";
-$name_field = $_POST['name'];                
-$email_field = $_POST['email'];                             
-$message = $_POST['message'];
-$body = "From: $name_field\n E-Mail: $email_field\n Message:\n $message";   
-echo "Data has been submitted to $to!"; 
-mail($to, $subject, $body);
-} else { 
-echo "blarg!";} 
-?>
+ <form action="contact.php" method="post">
+
+                        	<div class="formele">
+    				<ul>
+    					<li>
+    					<label>Name:</label>
+    					<input type="text" id="name" name="name" class="text2" />
+    					</li>
+    					<li>
+    					<label>Telephone:</label>
+    					<input id="name" type="text" name="phone" class="text2" />
+    					</li>
+    					<li>
+    					<label>E-mail:</label>
+    					<input id="name" type="text" name="email" class="text2" />
+    					</li>
+                        <li>
+    					<label>Address:</label>
+    					<input id="name" type="text" name="message" class="text2" />
+    					</li>
+    					
+    					<li class="button">
+    					<input type="image" type="text" src="images/submit.png" />					
+    					</li>
+    				</ul>			
+    			</div><!--Contact Form Ends Here -->
+                </form>
