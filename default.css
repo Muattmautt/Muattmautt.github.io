@@ -368,8 +368,10 @@ ul.contact li a.icon-rss:before
 	
 #header-wrapper
 {
-	background: #2b2b2b url(images/ background.png) no-repeat center;
 	background-size: auto 100%;
+	background-image: url(http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg)
+	background-repeat: no-repeat;
+
 }
 
 #header
