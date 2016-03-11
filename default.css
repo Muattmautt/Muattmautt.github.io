@@ -827,9 +827,9 @@ ul.contact li a.icon-rss:before
 
 #footer-wrapper
 {
-	overflow: hidden;
-	padding: 7em 0em;
-	color: rgba(255,255,255,0.5);
+	background-size: 100%;
+    background-image: url("http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg");
+    background-repeat: no-repeat;
 }
 
 
